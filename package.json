@@ -1,0 +1,20 @@
+{
+  "name": "telos",
+  "version": "1.0.0",
+  "description": "site about saunas",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Spirit",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-postcss": "^6.1.0",
+    "gulp-watch": "^4.3.5"
+  }
+}
