@@ -1,0 +1,52 @@
+@mixin size($width, $height)
+  width: $width
+  height: $height
+
+@mixin square($size)
+  @include size($size, $size)
+
+@mixin fill($digit: 0)
+  position: absolute
+  top:    $digit
+  bottom: $digit
+  left:   $digit
+  right:  $digit
+
+@mixin center-block()
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+@mixin clearfix()
+  &:before,
+  &:after
+    content: " "
+    display: table
+
+  &:after
+    clear: both
+
+@mixin align($horizontal: true, $vertical: true)
+  position: absolute
+
+  @if $horizontal and $vertical
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+  @else if $horizontal
+    left: 50%
+    transform: translate(-50%, 0)
+  @else
+    top: 50%
+    transform: translate(0, -50%)
+
+@function hsla-calc($color, $opacity)
+  @return hsla(hue($color), saturation($color), lightness($color), $opacity)
+
+@mixin transition($property: all)
+  transition: $property .3s linear
+
+@mixin link-underline()
+  text-decoration: underline
+  &:hover
+    text-decoration: none

@@ -1,0 +1,17 @@
+.start-block
+  min-height: 400px
+  position: relative
+  background: url("../img/main-bg.jpg") center no-repeat
+  background-size: cover
+  color: #fff
+  text-align: center
+
+  &:before
+    content: ""
+    @include fill
+    background: #000
+    opacity: .6
+
+  &__text
+    @include align
+    max-width: 600px

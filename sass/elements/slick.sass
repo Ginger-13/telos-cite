@@ -1,0 +1,19 @@
+.slick-dots
+  text-align: center
+  margin: 15px 0 0
+  font-size: 0
+
+  > li
+    display: inline-block
+    margin: 0 5px
+
+    > button
+      background: transparent
+      @include square(15px)
+      padding: 0
+      border-radius: 50%
+      border: 1px solid $main-color
+      outline: none
+
+    &.slick-active > button
+      background: $main-color
