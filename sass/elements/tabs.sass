@@ -1,0 +1,17 @@
+.tabs
+  font-size: 0
+
+  &__trigger
+    @extend .btn
+    @extend .btn--full
+    margin: 0 15px
+    border-radius: 7px
+
+    &:not(.active)
+      background: transparent
+      color: #000
+      border-color: #000
+
+      &:hover
+        color: $decoration-color
+        border-color: $decoration-color

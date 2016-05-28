@@ -1,0 +1,52 @@
+.reviews
+  text-align: center
+
+  &__list
+    text-align: left
+
+.review
+  margin: 50px 0 0
+  position: relative
+  min-height: 170px
+
+  img
+    +align(false)
+    left: 0
+    width: 220px
+
+  &__text
+    margin-left: 260px
+    background: #f9f9f9
+    padding: 20px
+    line-height: 27px
+    color: #777
+    position: relative
+
+    &:before
+      content: ""
+      +align(false)
+      left: -30px
+      +square(0)
+      border: 10px solid transparent
+      border-right: 20px solid #f9f9f9
+
+  &__name
+    color: $decoration-color
+    font-size: 20px
+    line-height: 1em
+    margin: 0
+
+  &:nth-child(even)
+    img
+      left: auto
+      right: 0
+
+    .review__text
+      margin: 0 260px 0 0
+      text-align: right
+
+      &:before
+        left: auto
+        right: -30px
+        border-right: 10px solid transparent
+        border-left: 20px solid #f9f9f9
