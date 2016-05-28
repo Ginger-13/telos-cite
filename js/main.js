@@ -1,5 +1,6 @@
 $('.js-slick').slick({
     arrows: false,
     dots: true,
-    slidesToShow: 3
+    rows: 2,
+    slidesPerRow: 4
 });
