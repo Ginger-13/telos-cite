@@ -1,0 +1,28 @@
+.project
+  text-align: right
+  background: url("/img/project_pic.jpg") right center no-repeat
+  height: 564px
+  background-size: 50%
+
+  .container
+    height: 100%
+    position: relative
+
+  &__text
+    @include align(false)
+    width: 50%
+    padding-right: 30px
+    left: 0
+
+  .pre-title
+    margin: 0 0 35px
+
+  .title
+    @include letter-spacing(-40)
+    font-size: 32px
+    font-weight: 400
+
+    + p
+      line-height: 27px
+      font-size: 18px
+      margin: 0
