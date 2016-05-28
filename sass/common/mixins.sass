@@ -57,3 +57,17 @@
 
 @mixin letter-spacing($photoshop)
   letter-spacing: ($photoshop / 1000) * 1em
+
+@mixin placeholder($color: #fff)
+  &::-webkit-input-placeholder
+    color: $color
+    @content
+  &:-moz-placeholder
+    color: $color
+    @content
+  &::-moz-placeholder
+    color: $color
+    @content
+  &:-ms-input-placeholder
+    color: $color
+    @content
