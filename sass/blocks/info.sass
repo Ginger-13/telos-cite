@@ -1,5 +1,5 @@
 .info
-  background: url("/img/can.jpg") center right no-repeat
+  background: url($img-dir + "can.jpg") center right no-repeat
   min-height: 590px
 
   .title + p
@@ -28,7 +28,7 @@
 
   &__pic
     @include square(32px)
-    background-image: url("/img/info-icons.png")
+    background-image: url($img-dir + "info-icons.png")
     background-repeat: no-repeat
     position: absolute
     left: 0
