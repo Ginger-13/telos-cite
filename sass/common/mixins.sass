@@ -50,3 +50,10 @@
   text-decoration: underline
   &:hover
     text-decoration: none
+
+@function calculateLS($photoshop)
+  $remSize: $photoshop / 1000em
+  @return $remSize * 1em
+
+@mixin letter-spacing($photoshop)
+  letter-spacing: ($photoshop / 1000) * 1em
